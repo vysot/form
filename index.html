@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <form action="get">
+        <h1 class="m-b-100">Intake Main Flow</h1>
+        <h4><span class="red">*</span>Mandatory field</h4>
+        <h2>Information</h2>
+
+        <div class="form-container">
+            <p class="form-item">
+                <label for="intake">Intake Type<span class="red">* (select)</span></label>
+                <select id="intake">
+                    <option value="1">referral</option>
+                </select>
+            </p>
+
+            <p class="form-item">
+                <label for="start">Enrollment Initiation Date jquery</label>
+                <input class="grey" type="date" id="start" value="2021-11-05">
+            </p>
+        </div>
+
+        <div class="form-container">
+            <p class="form-item">
+                <label for="phone">phone</label>
+                <input type="tel" id="phone">
+            </p>
+
+            <p class="form-item">
+                <label for="applic">Application Category<span class="red">*</span></label>
+                <select id="applic">
+                    <option value="1">Child Support</option>
+                </select>
+            </p>
+        </div>
+
+        <div class="form-container">
+            <p class="form-item">
+                <label for="email">email</label>
+                <input type="email" id="email">
+            </p>
+
+            <p class="form-item">
+                <label for="subm">Enrollment Submission Date (Optional)</label>
+                <input class="grey" type="date" id="subm" value="2021-11-05">
+            </p>
+        </div>
+
+        <div>
+            <p class="form-item-one">
+                <label for="registr">Application Registration (Optional)</label>
+                <select id="registr">
+                    <option selected value="1">APP0000116</option>
+                    <option value="1">APP0000117</option>
+                    <option value="1">APP0000118</option>
+                </select>
+            </p>
+        </div>
+
+        <div class="form-container-btn ">
+            <p class="form-item">
+                <label for="init">Enrollment Initiation Date jquery</label>
+                <input type="date" id="init" value="2021-11-05">
+            </p>
+
+            <p class="form-item-btn m-l-160">
+                <input class="btn-small" type="checkbox" id="purged">
+                <label for="purged">Purged</label>
+            </p>
+        </div>
+
+        <div class="form-container">
+            <p class="form-item">
+                <label for="date">Remaining Days Before Referral is Purged (Optional)</label>
+                <input type="text" id="date" value="13">
+            </p>
+
+            <p class="form-item">
+                <label for="exempt">Exempt from Paternity (Optional) (select)</label>
+                <select id="exempt">
+                    <option selected value="1">No</option>
+                    <option value="2">Yes</option>
+                </select>
+            </p>
+        </div>
+
+        <div class="form-container">
+            <p class="form-item">
+                <label for="pay">Fee Payment Date (Optional)</label>
+                <input type="date" id="pay" value="2021-11-05">
+            </p>
+
+            <p class="form-item">
+                <label for="status">Enrollment Status (Optional)</label>
+                <select id="status">
+                    <option selected value="1">Worklisted</option>
+                </select>
+            </p>
+        </div>
+
+        <div>
+            <p class="form-item-btn">
+                <input class="btn-small" type="checkbox" id="fee">
+                <label for="fee">Application Fee Processed</label>
+            </p>
+        </div>
+
+        <hr class="line">
+
+        <h2>Maternity Information</h2>
+
+        <div class="form-container">
+            <p class="form-item-btn">
+                <input class="btn-small" type="checkbox" id="request">
+                <label for="request">
+                    Are you requesting child support services for an unborn child?
+                </label>
+            </p>
+
+            <p class="form-item">
+                <label for="parent">Other known biological parent? (Optional)</label>
+                <select id="parent">
+                    <option selected value="1">None</option>
+                    <option value="2">There is</option>
+                </select>
+            </p>
+        </div>
+
+        <hr class="line">
+
+        <h2>Official Use</h2>
+
+        <div class="form-container">
+            <p class="form-item">
+                <label for="case">Case Category (select)</label>
+                <select id="case">
+                    <option selected value="1">Active IV-A</option>
+                </select>
+            </p>
+
+            <p class="form-item">
+                <label for="indic">IV-D Indicator<span class="red">*</span></label>
+                <select id="indic">
+                    <option value="1">Non-IV-D</option>
+                </select>
+            </p>
+        </div>
+
+        <div class="form-container">
+            <p class="form-item">
+                <label for="arrears">Arrears Only Indicator (Optional)</label>
+                <select id="arrears">
+                    <option selected value="1">None</option>
+                    <option value="2">There is</option>
+                </select>
+            </p>
+
+            <p class="form-item">
+                <label for="govcase">Intergovernmental Case Category (Optional)</label>
+                <select id="govcase">
+                    <option selected value="1">None</option>
+                    <option value="2">There is</option>
+                </select>
+            </p>
+        </div>
+
+        <div class="form-container">
+            <p class="form-item">
+                <label for="owner">Assigned County of Ownership (Optional)</label>
+                <select id="owner">
+                    <option selected value="1">None</option>
+                    <option value="2">There is</option>
+                </select>
+            </p>
+
+            <p class="form-item">
+                <label for="govtype">Intergovernmental Case Type (Optional)</label>
+                <select id="govtype">
+                    <option selected value="1">None</option>
+                    <option value="2">There is</option>
+                </select>
+            </p>
+        </div>
+
+        <div class="form-container">
+            <p class="form-item">
+                <label for="govstatus">Intergovermental Case Status (details)</label>
+                <select id="govstatus">
+                    <option selected value="1">None</option>
+                    <option value="2">There is</option>
+                </select>
+            </p>
+
+            <p class="form-item glass">
+                <label for="casenum">Case Number</label>
+                <input type="search" id="casenum" placeholder="Search Case Number">
+                <img class="glass-img" src="./img/glass.png" alt="лупа">
+            </p>
+        </div>
+
+        <div class="form-container">
+            <p class="form-item">
+                <label for="applicant">Special Handling Indicator for Applicant (Optional)</label>
+                <select id="applicant">
+                    <option selected value="1">None</option>
+                    <option value="2">There is</option>
+                </select>
+            </p>
+
+            <p class="form-item glass">
+                <label for="referral">Referral Number</label>
+                <input type="search" id="referral" placeholder="Search Referral Number">
+                <img class="glass-img" src="./img/glass.png" alt="лупа">
+            </p>
+        </div>
+
+        <div>
+            <p class="form-item-one">
+                <label for="otherparent">Special Handling Indicator for Other Parent (Optional)</label>
+                <select id="otherparent">
+                    <option selected value="1">None</option>
+                    <option value="2">There is</option>
+                </select>
+            </p>
+        </div>
+
+        <hr class="line">
+
+        <h2>System Information</h2>
+
+        <div class="form-container">
+            <p class="form-item glass">
+                <label for="user">Enrollment Taken by User</label>
+                <input type="search" id="user" placeholder="Search Input">
+                <img class="glass-img" src="./img/glass.png" alt="лупа">
+            </p>
+
+            <p class="form-item glass">
+                <label for="supervisor">Intake Supervisor (Optional)</label>
+                <input type="search" id="supervisor" placeholder="Search">
+                <img class="glass-img" src="./img/glass.png" alt="лупа">
+            </p>
+        </div>
+
+        <div class="form-container">
+            <p class="form-item glass">
+                <label for="worker">Worker (Optional)</label>
+                <input type="search" id="worker" placeholder="Search Input">
+                <img class="glass-img" src="./img/glass.png" alt="лупа">
+            </p>
+
+            <p class="form-item glass">
+                <label for="owneropt">Owner (Optional)</label>
+                <input type="search" id="owneropt" placeholder="Rajaneesh Banal">
+                <img class="glass-img" src="./img/glass.png" alt="лупа">
+            </p>
+        </div>
+
+        <button class="btn-next">Next</button>
+    </form>
+</body>
+
+</html>
